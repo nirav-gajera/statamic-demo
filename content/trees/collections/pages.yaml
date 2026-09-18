@@ -1,0 +1,7 @@
+tree:
+  -
+    entry: home-page-id
+  -
+    entry: test-page-id
+  -
+    entry: redirect-me-id

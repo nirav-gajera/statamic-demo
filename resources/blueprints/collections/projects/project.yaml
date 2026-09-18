@@ -1,0 +1,76 @@
+title: Project Case Study
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: client_name
+            field:
+              type: text
+              display: 'Client Name'
+          -
+            handle: year
+            field:
+              type: text
+              display: Year
+          -
+            handle: category
+            field:
+              type: text
+              display: Category
+          -
+            handle: featured_image
+            field:
+              type: text
+              display: 'Featured Image URL / Path'
+          -
+            handle: code_field
+            field:
+              type: code
+              display: 'Case Study UI Code Block (code_field)'
+              mode: htmlmixed
+          -
+            handle: content
+            field:
+              type: markdown
+              display: 'Markdown Overview'
+  seo:
+    display: 'SEO & Social Meta'
+    sections:
+      -
+        fields:
+          -
+            handle: seo_title
+            field:
+              type: text
+              display: 'Meta Title Tag'
+              instructions: 'Custom SEO Title for this case study.'
+          -
+            handle: meta_description
+            field:
+              type: textarea
+              display: 'Meta Description'
+              instructions: 'Brief summary for search engine snippets.'
+          -
+            handle: og_image
+            field:
+              type: text
+              display: 'Social Share Image (OG Image URL)'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

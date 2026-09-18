@@ -1,0 +1,21 @@
+<!-- Dynamic Project Case Study Template -->
+{{ if code_field:code }}
+    {{ code_field:code }}
+{{ else }}
+    <div class="py-16 bg-slate-50 min-h-screen">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-sm">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-mono mb-4">
+                    <span>CLIENT: {{       }}</span>
+                    <span>•</span>
+                    <span>YEAR: {{ year }}</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">{{ title }}</h1>
+                <p class="text-slate-600 text-base leading-relaxed mb-6">{{ content }}</p>
+                <a href="/#projects" class="inline-flex items-center space-x-2 px-5 py-2.5 bg-indigo-600 text-white font-bold text-xs rounded-xl">
+                    <span>&larr; Back to Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </div>
+{{ /if }}

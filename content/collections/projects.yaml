@@ -1,0 +1,6 @@
+title: Projects
+template: project
+slugs: true
+route: '/projects/{slug}'
+sort_by: date
+sort_dir: desc

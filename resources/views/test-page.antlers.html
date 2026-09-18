@@ -1,0 +1,84 @@
+<!-- Test Company IT Industry Solutions Overview Template -->
+<div class="py-12 bg-slate-100/70 min-h-[85vh]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- PAGE HEADER -->
+        <div class="mb-10 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between border-b border-slate-200 pb-8 gap-4">
+            <div>
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-mono mb-3">
+                    <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+                    <span>COMPANY: {{ company:company_name }}</span>
+                    <span class="text-slate-400">|</span>
+                    <span class="text-slate-700 font-bold">DEPARTMENT: {{ company:industry_department }}</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">{{ title }}</h1>
+                <p class="text-sm text-slate-600 mt-1">Inspecting enterprise IT solutions architecture and capabilities documentation.</p>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+                <a href="/" class="px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 rounded-xl border border-slate-300 text-xs font-semibold shadow-sm transition">
+                    &larr; Return to Home Portfolio
+                </a>
+            </div>
+        </div>
+
+        <!-- MAIN LAYOUT GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- MAIN CONTENT RENDER (8 COLS) -->
+            <div class="lg:col-span-8 space-y-6">
+                
+                <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm prose prose-slate max-w-none prose-headings:text-slate-900 prose-headings:font-extrabold prose-a:text-indigo-600">
+                    <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-100 not-prose">
+                        <span class="text-xs font-mono text-indigo-600 font-bold uppercase tracking-wider">{{ company:company_name }} IT Documentation</span>
+                        <span class="text-[11px] font-mono text-slate-400"></span>
+                    </div>
+
+                    <!-- Main Markdown Content from test-page.md -->
+                    {{ content }}
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR IT METRICS (4 COLS) -->
+            <div class="lg:col-span-4 space-y-6">
+                
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+                    <h3 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold pb-3 border-b border-slate-100">
+                        IT Department Profile
+                    </h3>
+
+                    <div class="space-y-3 text-xs">
+                        <div class="flex justify-between items-center p-2.5 bg-slate-50 rounded-lg border border-slate-200">
+                            <span class="text-slate-500">Company Name:</span>
+                            <strong class="text-slate-900 font-bold">{{ company:company_name }}</strong>
+                        </div>
+
+                        <div class="flex justify-between items-center p-2.5 bg-slate-50 rounded-lg border border-slate-200">
+                            <span class="text-slate-500">Industry:</span>
+                            <span class="text-indigo-600 font-semibold">{{ company:industry_department }}</span>
+                        </div>
+
+                        <div class="flex justify-between items-center p-2.5 bg-slate-50 rounded-lg border border-slate-200">
+                            <span class="text-slate-500">Certifications:</span>
+                            <span class="text-emerald-600 font-bold font-mono">ISO 27001</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="bg-indigo-900 text-white rounded-2xl p-6 shadow-lg relative overflow-hidden">
+                    <h3 class="text-base font-bold mb-2">Redirection Route Test</h3>
+                    <p class="text-xs text-indigo-200 leading-relaxed mb-4">
+                        Test framework traffic redirection handling by triggering the forwarding route test.
+                    </p>
+                    <a href="/redirect-me" class="block text-center py-2.5 px-4 bg-white hover:bg-indigo-50 text-indigo-900 rounded-xl text-xs font-bold transition">
+                        Trigger Redirect Test &rarr;
+                    </a>
+                </div> -->
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,22 @@
+title: Service
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: icon_svg
+            field:
+              type: textarea
+              display: 'Icon SVG / Key'
+          -
+            handle: summary
+            field:
+              type: textarea
+              display: 'Service Summary'

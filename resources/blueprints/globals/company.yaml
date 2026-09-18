@@ -1,0 +1,94 @@
+title: 'Company Details'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: company_name
+            field:
+              type: text
+              display: 'Company Name'
+              required: true
+          -
+            handle: industry_department
+            field:
+              type: text
+              display: 'Industry / Department'
+              required: true
+          -
+            handle: tagline
+            field:
+              type: text
+              display: Tagline
+          -
+            handle: hero_badge
+            field:
+              type: text
+              display: 'Hero Badge Text'
+          -
+            handle: hero_description
+            field:
+              type: textarea
+              display: 'Hero Description'
+          -
+            handle: portfolio_explanation_title
+            field:
+              type: text
+              display: 'Portfolio Section Title'
+          -
+            handle: portfolio_explanation_p1
+            field:
+              type: textarea
+              display: 'Portfolio Explanation Paragraph 1'
+          -
+            handle: portfolio_explanation_p2
+            field:
+              type: textarea
+              display: 'Portfolio Explanation Paragraph 2'
+          -
+            handle: contact_cta_badge
+            field:
+              type: text
+              display: 'Contact CTA Badge'
+          -
+            handle: contact_cta_title
+            field:
+              type: text
+              display: 'Contact CTA Title'
+          -
+            handle: contact_cta_description
+            field:
+              type: textarea
+              display: 'Contact CTA Description'
+  footer:
+    display: 'Footer Settings'
+    sections:
+      -
+        fields:
+          -
+            handle: footer_about_text
+            field:
+              type: textarea
+              display: 'Footer About Summary'
+          -
+            handle: iso_certification
+            field:
+              type: text
+              display: 'ISO Certification Badge'
+          -
+            handle: client_count
+            field:
+              type: text
+              display: 'Client Count Statistic'
+          -
+            handle: footer_copyright_notice
+            field:
+              type: text
+              display: 'Footer Copyright Notice'
+          -
+            handle: footer_tagline
+            field:
+              type: text
+              display: 'Footer Tagline / Subtext'

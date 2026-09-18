@@ -1,0 +1,102 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero_badge
+            field:
+              type: text
+              display: 'Hero Badge Text'
+          -
+            handle: hero_heading
+            field:
+              type: text
+              display: 'Hero Main Heading'
+          -
+            handle: hero_subheading
+            field:
+              type: textarea
+              display: 'Hero Subheading / Summary'
+          -
+            handle: portfolio_title
+            field:
+              type: text
+              display: 'Portfolio Section Title'
+          -
+            handle: portfolio_p1
+            field:
+              type: textarea
+              display: 'Portfolio Description Paragraph 1'
+          -
+            handle: portfolio_p2
+            field:
+              type: textarea
+              display: 'Portfolio Description Paragraph 2'
+          -
+            handle: content
+            field:
+              type: markdown
+              display: 'Main Page Content (Markdown)'
+              localizable: true
+          -
+            handle: code_field
+            field:
+              type: code
+              display: 'Code Field'
+              mode: htmlmixed
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  seo:
+    display: 'SEO & Social Meta'
+    sections:
+      -
+        fields:
+          -
+            handle: seo_title
+            field:
+              type: text
+              display: 'Meta Title Tag'
+              instructions: 'Custom SEO Title (defaults to entry title if blank)'
+          -
+            handle: meta_description
+            field:
+              type: textarea
+              display: 'Meta Description'
+              instructions: 'Compelling 155-character summary for search engine results.'
+          -
+            handle: og_image
+            field:
+              type: text
+              display: 'Social Share Image (OG Image URL)'
+              instructions: 'URL/path to open graph image for Facebook/LinkedIn sharing.'
+          -
+            handle: canonical_url
+            field:
+              type: text
+              display: 'Canonical URL'
+              instructions: 'Optional canonical link override.'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

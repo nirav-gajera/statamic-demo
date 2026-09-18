@@ -1,0 +1,12 @@
+name: Nirav
+super: true
+id: 4b18c2b1-9232-4abf-a639-92fed5574530
+password_hash: $2y$12$LU2Q2fmmIikhRUqHlT3gcu6TfDg0BsLmVddNpbyYENHT9.Z9sKoAi
+preferences:
+  collections:
+    pages:
+      view: list
+    projects:
+      view: list
+    services:
+      view: list
