@@ -111,6 +111,7 @@ Access the Statamic Control Panel admin interface at **`http://statamic-demo.tes
    ```env
    APP_URL=http://statamic-demo.test
    STATAMIC_STATIC_CACHING_STRATEGY=null
+   STATAMIC_LICENSE_KEY=
    ```
 
 5. **Run Development Server**:
